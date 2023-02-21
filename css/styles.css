@@ -1,0 +1,76 @@
+:root{
+/* Main page */
+--main-color:#434455; 
+--secondary-color:#2E2F42;
+--accent-color:#4D5AE5; 
+--white-color: #FFFFFF;
+/* /Main page */
+} 
+ 
+.list{ 
+   list-style-type: none; 
+}
+.link{ 
+   text-decoration: none; 
+}
+.title{
+    color: var(--secondary-color);
+}
+
+/*Header*/ 
+.header-logo {
+   color:var(--secondary-color);
+} 
+.accent{ 
+   color: var(--accent-color); 
+} 
+.nav-link { 
+   color: var(--secondary-color); 
+} 
+.address {
+   font-style: normal; 
+}
+.address-link {
+   color: var(--main-color);
+}
+/*/Header*/
+
+/* Hero */
+.hero{
+    background-color: var(--secondary-color);
+}
+.hero-title{
+    color: var(--white-color)
+}
+.hero-btn{
+    background-color: var(--accent-color);
+    color: var(--white-color)
+}
+/* /Hero */
+
+/* Principles of work section */
+.principles-desc{
+    color: var(--main-color);
+}
+/* /Principles of work section */
+
+/* Our Team */
+.team{
+    background-color: #F4F4FD;
+}
+.team-desc{
+    color: var(--main-color);
+}
+/* /Our Team */
+
+/* Footer */
+.page-footer{
+    background-color: var(--secondary-color);
+}
+/* /Footer */
+.footer-logo{
+    color: #F4F4FD;
+}
+.footer-desc{
+    color:#E7E9FC;
+}
