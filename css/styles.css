@@ -11,6 +11,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    letter-spacing: var(--main-letter-spacing);
 }
 
 
@@ -28,7 +31,6 @@ body{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: var(--main-letter-spacing);
     text-transform: capitalize;
     color: var(--secondary-color);
 }
@@ -36,10 +38,21 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: var(--main-letter-spacing);
     color: var(--secondary-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* --------------------------Studio page-------------------------- */
 
 /*Header*/ 
@@ -57,18 +70,11 @@ body{
 } 
 .nav-link {
    font-weight: 500;
-   font-size: var(--main-font-size);
-   line-height: var(--main-line-height);
-   letter-spacing: var(--main-letter-spacing);
    color: var(--secondary-color); 
 } 
-.address {
-   font-style: normal;
-   font-size: var(--main-font-size);
-   line-height: var(--main-line-height);
-   letter-spacing: var(--main-letter-spacing);
-}
+
 .address-link {
+   font-style: normal;
    color: var(--main-color);
 }
 .nav-link:hover,
@@ -90,14 +96,13 @@ body{
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing:var(--main-letter-spacing);
     color: var(--white-color)
 }
 .hero-btn{
-    font-family:'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
+    font-size: inherit;
+    line-height: inherit; 
     align-items: center;
     letter-spacing: 0.04em;
     background-color: var(--accent-color);
@@ -110,14 +115,6 @@ body{
 }
 /* /Hero */
 
-/* Principles of work section */
-.principles-desc{
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
-    letter-spacing: var(--main-letter-spacing);
-}
-/* /Principles of work section */
-
 /* Our Team */
 .team{
     background-color: #F4F4FD;
@@ -126,10 +123,7 @@ body{
     text-align: center;
 }
 .team-desc{
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
     text-align: center;
-    letter-spacing: var(--main-letter-spacing);
 }
 /* /Our Team */
 
@@ -147,9 +141,6 @@ body{
     color: #F4F4FD;
 }
 .footer-desc{
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
-    letter-spacing: var(--main-letter-spacing);
     color:#E7E9FC;
 }
 /* /Footer */
@@ -158,10 +149,10 @@ body{
 
 /* --------------------------Portfolio page-------------------------- */
 .portfolio-btn{
-    font-family:'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
+    font-size: inherit;
+    line-height: inherit;
     text-align: center;
     letter-spacing: 0.04em;
     background-color: #F4F4FD;
@@ -173,11 +164,5 @@ body{
 .portfolio-btn:focus{
     background-color: #404BBF;
     color: var(--white-color);
-}
-
-.portfolio-desc{
-    font-size: var(--main-font-size);
-    line-height: var(--main-line-height);
-    letter-spacing: var(--main-letter-spacing);
 }
 /* --------------------------/Portfolio page-------------------------- */
